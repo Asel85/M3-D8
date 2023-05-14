@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+/*NAVBAR*/
+
+.bg-dark{
+    background-color:#000 !important;
+}
+.nav_img{
+    width: 100px;
+    height: auto;
+}
+.navbar_items{
+    list-style: none;
+}
+.navbar_link{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+/*carousel cards*/
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+.card-img:hover{
+    transform: scale(1.5);
+}
+.icon{
+    width: 30px;
+    height: auto;
+}
+.footer_icons{
+    margin-left:150px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.footer{
+    margin-left:150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+}
